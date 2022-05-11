@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
+using TBR.Core.Entities;
 
 namespace TBR.Core.Interfaes
 {
@@ -11,9 +13,11 @@ namespace TBR.Core.Interfaes
         /// </summary>
         /// <param name="bookToInsert"></param>
         /// <returns></returns>
-        public int InsertBook(Book bookToInsert);
+        public Task InsertBook(Book bookToInsert);
 
-        public Book GetByISBN(int isbn);
+
+        public Task<Book> GetByISBN (string isbn);
+        public Task <IEnumerable<Book>> GetByTitle (string title);
 
     }
 }

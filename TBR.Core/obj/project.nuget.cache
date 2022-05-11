@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "7MF29UoP6rlBgqhWHr5tLuvDzxp2Kk7gOQhimfLGrqD0ymJHaR20pSTSJ08/yM2cQskuxdpnfaFRcX58rRK3cw==",
+  "dgSpecHash": "yjB6EMLFdGxwNv37RgOGSv5wkdiYFesZ2GLngX/GiPGOwtkWyPvZkSf1evJilz3VpS13t8EOW95Mq3m/DyUdvw==",
   "success": true,
   "projectFilePath": "C:\\Users\\andre\\source\\repos\\TBR.Library\\TBR.Core\\TBR.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\google.apis\\1.57.0\\google.apis.1.57.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\google.apis.auth\\1.57.0\\google.apis.auth.1.57.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\google.apis.books.v1\\1.57.0.2633\\google.apis.books.v1.1.57.0.2633.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\google.apis.core\\1.57.0\\google.apis.core.1.57.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

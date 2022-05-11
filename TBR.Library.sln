@@ -5,11 +5,13 @@ VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{85DF4E5A-87AB-4D0B-A812-543FD582E7EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TBR.Core", "TBR.Core\TBR.Core.csproj", "{BD502EBD-C4EF-4A6D-A726-C4F9480AA16D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TBR.Core", "TBR.Core\TBR.Core.csproj", "{BD502EBD-C4EF-4A6D-A726-C4F9480AA16D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TBR.Infrastructure", "TBR.Infrastructure\TBR.Infrastructure.csproj", "{CC3F2FFA-9C3D-421A-AE1C-BE3FD59BEC7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TBR.Infrastructure", "TBR.Infrastructure\TBR.Infrastructure.csproj", "{CC3F2FFA-9C3D-421A-AE1C-BE3FD59BEC7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TBR.Web", "TBR.Web\TBR.Web.csproj", "{902F45C1-048E-4E33-B711-D93496BD34D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TBR.Web", "TBR.Web\TBR.Web.csproj", "{902F45C1-048E-4E33-B711-D93496BD34D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TBR.Tests", "TBR.Tests\TBR.Tests.csproj", "{3FA1431E-355C-411E-81A0-C88AE7001B53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{902F45C1-048E-4E33-B711-D93496BD34D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{902F45C1-048E-4E33-B711-D93496BD34D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{902F45C1-048E-4E33-B711-D93496BD34D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FA1431E-355C-411E-81A0-C88AE7001B53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA1431E-355C-411E-81A0-C88AE7001B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA1431E-355C-411E-81A0-C88AE7001B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA1431E-355C-411E-81A0-C88AE7001B53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,3 +15,4 @@ namespace TBR.Core.Interfaes
         public Book GetByRating(int rating, int userId);
 
     }
+}

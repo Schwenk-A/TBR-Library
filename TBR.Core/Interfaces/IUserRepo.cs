@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TBR.Core.Entities;
 
 namespace TBR.Core.Interfaes
 {
