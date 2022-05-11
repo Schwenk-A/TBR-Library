@@ -17,24 +17,31 @@ namespace TBR.Tests.TBR.Infrastructure
         }
 
         [Test]
-        public void InsertBook_Given_Book_Should_InsertBook() 
+        public async Task InsertBook_Given_Book_Should_InsertBook() 
         {
             Book book = A.New<Book>();
 
-             _bookRepo.InsertBook(book);
+            await _bookRepo.InsertBook(book);
 
-            var result =  _bookRepo.GetByTitle(book.Title);
+            var result = await _bookRepo.GetByTitle(book.Title);
 
             Assert.NotNull(result);
 
         }
 
 
-        //public Task<Book> GetByISBN(string ISBN)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        [Test]
+        public async Task GetByAuthor_Given_Author_Should_ReturnBooksByAuthor()
+        {
+            Book book = A.New<Book>();
 
+            await _bookRepo.InsertBook(book);
+
+            var result = await _bookRepo.GetByAuthor(book.Authors);
+
+            Assert.NotNull(result);
+
+        }
 
     }
 }

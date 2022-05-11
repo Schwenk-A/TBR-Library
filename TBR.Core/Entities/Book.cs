@@ -8,8 +8,9 @@ namespace TBR.Core.Entities
 {
     public class Book
     {
+        public int Id { get; set; }
 
-        public IEnumerable<string> Authors { get; set; } = Enumerable.Empty<string>();
+        public string Authors { get; set; } = string.Empty;
         public string Title { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public int ReadingPosition { get; set; }
@@ -17,9 +18,9 @@ namespace TBR.Core.Entities
         public string BookMediumPicture { get; set; } = string.Empty;
         public int PageCount { get; set; }
 
-        public IEnumerable<string> Categories { get; set; } = Enumerable.Empty<string>();
+        public string Categories { get; set; } = string.Empty;
 
-        public IEnumerable<string> ISBN { get; set; }
+        public string ISBN { get; set; }
 
         public string PublishDate { get; set; }
 

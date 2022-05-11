@@ -25,6 +25,5 @@ namespace TBR.Infrastructure
             return new ConfigurationBuilder().AddJsonFile(AppSetting).Build();
         }
 
-
     }
 }

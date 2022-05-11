@@ -18,12 +18,13 @@ namespace TBR.Infrastructure.GoogleBookAPI
             return new Book()
             {
                 Title = volume.VolumeInfo.Title,
-                Authors = volume.VolumeInfo.Authors,
+                Authors = volume.VolumeInfo.Authors.Aggregate((a,b)=> $"{a}, {b}"),
                 AcessBookURLInfo = volume.VolumeInfo.InfoLink,
                 BookMediumPicture = volume.VolumeInfo.ImageLinks.Medium,
                 PublishDate = volume.VolumeInfo.PublishedDate,
-                ISBN = volume.VolumeInfo.IndustryIdentifiers.Select(isbn => isbn.Identifier),
-                Description = volume.VolumeInfo.Description
+                ISBN = volume.VolumeInfo.IndustryIdentifiers.Select(isbn => isbn.Identifier).Aggregate((a, b) => $"{a}, {b}"),
+                Description = volume.VolumeInfo.Description,
+                Categories = volume.VolumeInfo.Categories.Aggregate((a,b)=> $"{a}, {b}")
             };
         }
     }

@@ -25,6 +25,12 @@ namespace TBR.Infrastructure.Data
             return await _context.Books.Where(b => b.Title == title).ToListAsync();
         }
 
+
+        public async Task<IEnumerable<Book>> GetByAuthor(string author)
+        {
+            return await _context.Books.Where(b => b.Authors.Contains(author)).ToListAsync();
+        }
+
         public async Task InsertBook(Book bookToInsert)
         {
             _context.Books.Add(bookToInsert);

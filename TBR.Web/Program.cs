@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
@@ -13,8 +15,29 @@ namespace TBR.Web
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+
+            var builder = WebApplication.CreateBuilder(args);
+            var services = builder.Services;
+            var configuration = builder.Configuration;
+
+            services.AddAuthentication().AddGoogle(googleOptions =>
+            {
+                googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
+                googleOptions.ClientSecret = configuration["Authentication:Google:ClientSecret"];
+            });
+
+            //CreateHostBuilder(args).Build().Run();
+            builder.Build().Run();
         }
+
+
+
+//        var builder = WebApplication.CreateBuilder(args);
+//        var app = builder.Build();
+
+//        app.MapGet("/", () => "Hello World!");
+
+//app.Run();
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
@@ -22,5 +45,8 @@ namespace TBR.Web
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+                
+
     }
 }

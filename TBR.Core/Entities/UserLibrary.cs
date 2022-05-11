@@ -7,6 +7,7 @@ namespace TBR.Core.Entities
 {
     public class UserLibrary
     {
+        public int Id { get; set; }
         public virtual Book Book { get; set; }
 
         public virtual User User { get; set; }
@@ -21,7 +22,7 @@ namespace TBR.Core.Entities
 
         [ForeignKey("Review")]
         public int ReviewId { get; set; }
-        public int Id { get; set; }
+       
         
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "71kJrsGRcC3Ve2avvQLfrQMUILTW1xajkG4FQPXQOupxXXS6iGFRYMP2ax/aDzrpcCprxH4R3cVdLx6MldytTQ==",
+  "dgSpecHash": "5YX0kqDT2MLTYkqVrxgsgMkk0A+tMGmH90kfC1AwpHOkLuaEc09ebOT5mFtBUoByNzbYJLSTk8K9gN7fWVcj/g==",
   "success": true,
   "projectFilePath": "C:\\Users\\andre\\source\\repos\\TBR.Library\\TBR.Web\\TBR.Web.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\andre\\.nuget\\packages\\google.apis.auth\\1.57.0\\google.apis.auth.1.57.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\google.apis.books.v1\\1.57.0.2633\\google.apis.books.v1.1.57.0.2633.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\google.apis.core\\1.57.0\\google.apis.core.1.57.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\6.0.5\\microsoft.aspnetcore.authentication.google.6.0.5.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
