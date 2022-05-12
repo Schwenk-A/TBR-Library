@@ -22,7 +22,7 @@ namespace TBR.Infrastructure.GoogleBookAPI
                 AcessBookURLInfo = volume.VolumeInfo.InfoLink,
                 BookMediumPicture = volume.VolumeInfo.ImageLinks.Medium,
                 PublishDate = volume.VolumeInfo.PublishedDate,
-                ISBN = volume.VolumeInfo.IndustryIdentifiers.Select(isbn => isbn.Identifier).Aggregate((a, b) => $"{a}, {b}"),
+                ISBN = volume.VolumeInfo.IndustryIdentifiers.Select(isbn => isbn.Identifier).Aggregate((a, b) =>$"{a}, {b}"),
                 Description = volume.VolumeInfo.Description,
                 Categories = volume.VolumeInfo.Categories.Aggregate((a,b)=> $"{a}, {b}")
             };

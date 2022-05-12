@@ -19,7 +19,7 @@ namespace TBR.Tests.TBR.Infrastructure
         [OneTimeSetUp]
         public async Task OneTimeSetUp()
         {
-            _testVolume = await new GoogleBookAPI().GetByISBNAsync("978-1-60309-025-4");
+            _testVolume = await new GoogleBookAPI().GetByISBNAsync("978-1-60309-479-5");
         }
 
         [Test]
@@ -33,7 +33,7 @@ namespace TBR.Tests.TBR.Infrastructure
         public void ConvertToBook_ConvertsAuthorsSuccessfully()
         {
             var book = _testVolume.ConvertToBook();
-            Assert.AreEqual(_testVolume.VolumeInfo.Authors, book.Authors);
+            Assert.AreEqual(_testVolume.VolumeInfo.Authors.Aggregate((a, b) => $"{a}, {b}"), book.Authors);
         }
 
         [Test]
@@ -62,7 +62,7 @@ namespace TBR.Tests.TBR.Infrastructure
         public void ConvertToBook_ConvertsISBNSuccessfully()
         {
             var book = _testVolume.ConvertToBook();
-            Assert.AreEqual(_testVolume.VolumeInfo.IndustryIdentifiers.Select(isbn => isbn.Identifier), book.ISBN);
+            Assert.AreEqual(_testVolume.VolumeInfo.IndustryIdentifiers.Select(isbn => isbn.Identifier).Aggregate((a, b) => $"{a}, {b}"), book.ISBN);
         }
     }
 }
