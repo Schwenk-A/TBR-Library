@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
-
-
+using TBR.Infrastructure.GoogleBookAPI;
 
 var builder = WebApplication.CreateBuilder(args);
 var TBRApiKey = builder.Configuration["TBR:UserApiKey"];
@@ -23,6 +22,7 @@ var TBRApiKey = builder.Configuration["TBR:UserApiKey"];
 
    builder.Services.AddControllersWithViews();
    builder.Services.AddRazorPages();
+builder.Services.AddTransient<IGoogleBookAPI, GoogleBookAPI>();
    var app = builder.Build();
 
 // Configure the HTTP request pipeline.

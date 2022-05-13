@@ -1,0 +1,43 @@
+﻿
+@using TBR.Core.Entities
+@model IEnumerable<Book>
+
+
+    <div class="text-center"> 
+<h2>Search Results</h2>
+<style> 
+.table {
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+}
+</style>
+
+<table class="table">
+
+    <tr>
+        <th>Cover</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Description</th>
+        <th>ISBN</th>
+        <th>Publish Date</th>
+        
+    </tr>
+
+
+@foreach (var books in Model)
+    {
+    <tr>
+        <td>@books.BookMediumPicture</td>
+        <td>@books.Title</td>
+        <td>@books.Authors</td>
+        <td>@books.Description</td>
+        <td>@books.ISBN</td>
+        <td>@books.PublishDate</td>
+        
+
+    </tr>
+    }
+    </table>
+</div>
